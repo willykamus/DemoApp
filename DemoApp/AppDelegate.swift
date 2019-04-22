@@ -13,10 +13,42 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    // We need this to save the data or variables of the user, persistent data
+    var userData = UserDefaults.standard
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //Since we are going to tell the phone what view to display, we have to create it
+        //We do not have entry point (Very important)
+        //We look for the bounds of the screen of the user
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        //Now we need to look for the storyboard where our view is
+        //Name of the file in the storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        //Set the view that will load
+        let registerView = storyboard.instantiateViewController(withIdentifier: "RegisterViewController")
+        
+        let logInView = storyboard.instantiateViewController(withIdentifier: "LogInViewController")
+        
+        let mainView = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+        
+        if userData.bool(forKey: "registered") && userData.bool(forKey: "logIn") {
+            
+            window?.rootViewController = mainView
+            
+        } else if userData.bool(forKey: "registered") && !userData.bool(forKey: "logIn"){
+            
+            window?.rootViewController = logInView
+            
+        } else {
+            
+            window?.rootViewController = registerView
+            
+        }
+        
         return true
     }
 

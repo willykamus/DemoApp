@@ -28,12 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Name of the file in the storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        //Set the view that will load
-        let registerView = storyboard.instantiateViewController(withIdentifier: "RegisterViewController")
-        
-        let logInView = storyboard.instantiateViewController(withIdentifier: "LogInViewController")
+        let userlogReg = storyboard.instantiateViewController(withIdentifier: "UserTabViewController") as! UserTabViewController
         
         let mainView = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+        
+        print(userData.bool(forKey: "registered"))
+        print(userData.bool(forKey: "logIn"))
         
         if userData.bool(forKey: "registered") && userData.bool(forKey: "logIn") {
             
@@ -41,11 +41,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         } else if userData.bool(forKey: "registered") && !userData.bool(forKey: "logIn"){
             
-            window?.rootViewController = logInView
+            window?.rootViewController = userlogReg
+            userlogReg.selectedIndex = 1
             
         } else {
             
-            window?.rootViewController = registerView
+            window?.rootViewController = userlogReg
+            userlogReg.selectedIndex = 0
             
         }
         

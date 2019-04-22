@@ -15,6 +15,7 @@
 		1C9AEE8D226D67BE004FEF0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9AEE8B226D67BE004FEF0A /* LaunchScreen.storyboard */; };
 		1C9AEE95226D6C89004FEF0A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AEE94226D6C89004FEF0A /* RegisterViewController.swift */; };
 		1C9AEE97226D836B004FEF0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AEE96226D836B004FEF0A /* MainViewController.swift */; };
+		1C9AEE99226E1E61004FEF0A /* UserTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AEE98226E1E61004FEF0A /* UserTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1C9AEE8E226D67BE004FEF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C9AEE94226D6C89004FEF0A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1C9AEE96226D836B004FEF0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1C9AEE98226E1E61004FEF0A /* UserTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1C9AEE8E226D67BE004FEF0A /* Info.plist */,
 				1C9AEE86226D67BC004FEF0A /* DemoApp.xcdatamodeld */,
 				1C9AEE94226D6C89004FEF0A /* RegisterViewController.swift */,
+				1C9AEE98226E1E61004FEF0A /* UserTabViewController.swift */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				1C9AEE80226D67BC004FEF0A /* AppDelegate.swift in Sources */,
 				1C9AEE95226D6C89004FEF0A /* RegisterViewController.swift in Sources */,
 				1C9AEE97226D836B004FEF0A /* MainViewController.swift in Sources */,
+				1C9AEE99226E1E61004FEF0A /* UserTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

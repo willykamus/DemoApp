@@ -66,6 +66,7 @@
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="logInAction:" destination="4lP-OP-CJF" eventType="touchUpInside" id="hUm-Fm-ax5"/>
+                                            <segue destination="aix-XJ-IBx" kind="show" id="tX6-W0-uRy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -101,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fz4-iN-bsn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="775"/>
+            <point key="canvasLocation" x="665" y="449"/>
         </scene>
         <!--Register-->
         <scene sceneID="SML-6R-CNK">
@@ -193,6 +194,7 @@
                                         <state key="normal" title="Register"/>
                                         <connections>
                                             <action selector="registerAction:" destination="epv-uC-ev3" eventType="touchUpInside" id="nQV-B7-Asv"/>
+                                            <segue destination="aix-XJ-IBx" kind="showDetail" id="MS4-aj-KFq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -260,19 +262,18 @@
                         <barButtonItem key="leftBarButtonItem" title="Sign Out" id="KoU-NV-dpX">
                             <connections>
                                 <action selector="signOut:" destination="7NX-MM-PU1" id="kPb-Dm-mRa"/>
-                                <segue destination="4lP-OP-CJF" kind="showDetail" identifier="logOut" id="rvg-bI-YqO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKg-7Y-eRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2788" y="44"/>
+            <point key="canvasLocation" x="2703" y="62"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--User Tab View Controller-->
         <scene sceneID="ERO-kY-v1a">
             <objects>
-                <tabBarController id="CQ6-7T-n1Q" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="UserTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CQ6-7T-n1Q" customClass="UserTabViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wKI-5N-X5v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -285,7 +286,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZh-8B-Mtn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-251" y="44"/>
+            <point key="canvasLocation" x="-330" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J0p-LE-wPL">
@@ -303,10 +304,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NV9-0S-mD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="44"/>
+            <point key="canvasLocation" x="1699" y="62"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rvg-bI-YqO"/>
+        <segue reference="tX6-W0-uRy"/>
     </inferredMetricsTieBreakers>
 </document>

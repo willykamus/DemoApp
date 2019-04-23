@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4F3A45226EABB100180820 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4F3A44226EABB100180820 /* UserTableViewCell.swift */; };
 		1C9AEE80226D67BC004FEF0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AEE7F226D67BC004FEF0A /* AppDelegate.swift */; };
 		1C9AEE82226D67BC004FEF0A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AEE81226D67BC004FEF0A /* LogInViewController.swift */; };
 		1C9AEE85226D67BC004FEF0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9AEE83226D67BC004FEF0A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C4F3A44226EABB100180820 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		1C9AEE7C226D67BC004FEF0A /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9AEE7F226D67BC004FEF0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C9AEE81226D67BC004FEF0A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				1C9AEE86226D67BC004FEF0A /* DemoApp.xcdatamodeld */,
 				1C9AEE94226D6C89004FEF0A /* RegisterViewController.swift */,
 				1C9AEE98226E1E61004FEF0A /* UserTabViewController.swift */,
+				1C4F3A44226EABB100180820 /* UserTableViewCell.swift */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				1C9AEE82226D67BC004FEF0A /* LogInViewController.swift in Sources */,
 				1C9AEE88226D67BC004FEF0A /* DemoApp.xcdatamodeld in Sources */,
+				1C4F3A45226EABB100180820 /* UserTableViewCell.swift in Sources */,
 				1C9AEE80226D67BC004FEF0A /* AppDelegate.swift in Sources */,
 				1C9AEE95226D6C89004FEF0A /* RegisterViewController.swift in Sources */,
 				1C9AEE97226D836B004FEF0A /* MainViewController.swift in Sources */,

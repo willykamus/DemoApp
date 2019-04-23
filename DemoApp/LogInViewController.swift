@@ -9,8 +9,8 @@
 import UIKit
 import CoreData
 
-let appDelegate = UIApplication.shared.delegate as? AppDelegate
 var userData = UserDefaults.standard
+let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
 class LogInViewController: UIViewController {
 
@@ -52,8 +52,11 @@ class LogInViewController: UIViewController {
                     let validPassword = currentUser[0].password
                     //Check if password are the same
                     if validPassword == passwordLabel.text {
+                        
                         //Set the defaull to true
                         userData.setValue(true, forKey: "logIn")
+                        
+                        userData.setValue(currentUser[0].email, forKey: "userEmail")
                         //Synchronize
                         userData.synchronize()
                         //Let the controller know that the password is correct

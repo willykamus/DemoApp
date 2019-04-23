@@ -24,6 +24,16 @@ class RegisterViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        if checkPasswordMatch() {
+            return true
+        }
+        
+        return false
+        
+    }
 
     
     @IBAction func registerAction(_ sender: UIButton) {
@@ -51,6 +61,8 @@ class RegisterViewController: UIViewController {
             userData.set(true, forKey: "registered")
             //This default will allow me to launch the app if the user is sign in
             userData.set(true, forKey: "logIn")
+            
+            userData.set(newUser.email, forKey: "userEmail")
             
             //ALWAYS synchronize the data
             userData.synchronize()
